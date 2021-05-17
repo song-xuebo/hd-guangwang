@@ -30,32 +30,11 @@
 				<div id="top">
 					<div class="top">
 						<div class="top_logo">
-							<div id="img">
-								<img src="./img/load.png" alt="logo" style="width: 100%; height: 130%;">
-							</div>
-							<div style="width: 90px; text-align: center;">
-								<p style="font-size: 20px; font-weight: 700; color: #fff; margin: 0;">辉达时代</p>
-								<span style="font-size: 12px; color: #fff; ">www.hd521.com</span>
-							</div>
-							<span style="display: flex; 
-							            display:inline-flex;
-										align-items:center;
-										margin: 0 10px;
-										color:#fff;
-										">|</span>
-							<div style="display: flex; 
-							            display:inline-flex;
-										align-items:center;
-										font-size: 20px;
-										color:#fff;
-										">
-								·IT·人才孵化基地
-							</div>
+							<img src="./image/横版logo—辉达.svg" alt="">
 						</div>
 						<div class="top_text" v-if="textShow==true">
 							<div v-for="item in itemNam" class="top_text-div" @click="topTextClick(item)">{{item}}</div>
 						</div>
-						
 					</div>
 				</div>
 				<!-- 头部精品课程 -->
@@ -73,10 +52,10 @@
 			<div id="bannerNext" v-if="bannerNextshow==true">
 				<div class="bannerNext lat">
 					<div v-for="item in bannerNext" class="bannerNextText">
-						<div style="width: 54px; height: 54px; margin-top: 16px; margin-right: 12px;">
+						<div style="width: 27px; height: 23x; display: flex; align-items: center; margin-right: 18px;">
 							<img :src="item.icon" :alt="item.icon" style="width: 100%; ">
 						</div>
-						<span style="width: 200px; font-size: 32px;">{{item.course}}</span>
+						<span style="width: 200px; font-size: 24px;">{{item.course}}</span>
 					</div>
 				</div>
 			</div>
@@ -87,6 +66,9 @@
 				<div id="headline">
 					<p class="headline_tit">课程中心</p>
 					<p class="headline_titNext">完善的课程研发体系紧跟技术发展及企业需求</p>
+					<div style="position: absolute; left:50%;top:50px; margin-left: -130px; opacity:0.3; width: 35px; height: 35px; background-color: #6232E5; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:80px; margin-left: 88px; opacity:0.3; width: 28px; height: 28px; background-color: #FFE290; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:36px; margin-left: -110px; opacity:0.3; width: 31px; height: 31px; background-color: #3258E5; "></div>
 				</div>
 				<!-- 课程简介 -->
 				<div id="synopsis">
@@ -127,6 +109,7 @@
 					<div class="outline_box lat">
 						<h4>课程大纲</h4>
 						<span>高标准研发培训课程及项目教学质量有保障</span>
+						<div style="position: absolute; width: 12px; height: 34px; background-color: rgba(50,88,229,0.3); top:-10px; left:-17px" ></div>
 					</div>
 				</div>
 				<!-- 课程切换 -->
@@ -134,8 +117,8 @@
 					<div class="outlineTab_box">
 						<div class="outlineTab_boxDiv">
 							<div class="box" v-for="(item,index) in outlineItems" @click="outlineTabboxDiv(item,index)">
-								<div style="width: 35px; height: 35px; margin-right: 8px;">
-									<img :src="item.icon" :alt="item.title">
+								<div style="width: 24px; height: 26px; margin-right: 8px;">
+									<img :src="item.img" :alt="item.title" >
 								</div>
 								<span>
 									{{item.title}}
@@ -150,7 +133,7 @@
 				<!-- 高级软件工程师课程培训标准标题 -->
 				<div class="outline" style="">
 					<div class="outline_box" style="border-color: #E1E1E1; font-size: 22px;">
-						<span>{{outlinebodyTitleA}}<span style="color:#000">课程培训标准</span></span>
+						<span>{{outlinebodyTitleA}}<span>课程培训标准</span></span>
 					</div>
 				</div>
 				<!-- 高级软件工程师课程培训标准 -->
@@ -168,12 +151,11 @@
 				</div>
 
 				<!--  项目标准 标题-->
-				<div class="outline">
+			<!-- 	<div class="outline">
 					<div class="outline_box" style="border-color: #E1E1E1; font-size: 22px;">
 						<span>{{outlinebodyTitleB}}<span style="color:#000">项目标准</span></span>
 					</div>
 				</div>
-				<!-- 项目标准内容 -->
 				<div class="outlinebodyTitle_item">
 					<div class="outlinebodyTitle_item-box lat">
 						<div class="outlinebodyTitle_item-box_div" v-for="item in outlinebodyTitleItemNext"
@@ -186,7 +168,7 @@
 							<p>{{item.textC}}</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- 项目特色 -->
 				<div class="outline">
 					<div class="outline_box" style="border-color: #E1E1E1; font-size: 22px;">
@@ -216,6 +198,9 @@
 				<div id="headline">
 					<p class="headline_tit">教研团队</p>
 					<p class="headline_titNext">技术大牛+硬核讲师为教学质量保驾护航，保障课程与企业需求实时接轨；10余年经验的教学老师更懂“教”与“学”！</p>
+					<div style="position: absolute; left:50%;top:50px; margin-left: -130px; opacity:0.3; width: 35px; height: 35px; background-color: #6232E5; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:80px; margin-left: 88px; opacity:0.3; width: 28px; height: 28px; background-color: #FFE290; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:36px; margin-left: -110px; opacity:0.3; width: 31px; height: 31px; background-color: #3258E5; "></div>
 				</div>
 				<div class="teamTop">
 					<div class="teamTopItemz lat">
@@ -286,6 +271,7 @@
 				<div id="headline">
 					<p class="headline_tit" style="color:#fff">用心为每一位学员</p>
 					<p class="headline_titNext" style="color:#ACACAC">为毕业学员提供高质量人脉、职场资源、技术研习等众多学习交流机会</p>
+					
 				</div>
 				<div class="diligentlyBox">
 					<div class="diligentlyBox_div" v-for="item in diligentlyItemA">
@@ -323,6 +309,9 @@
 				<div id="headline">
 					<p class="headline_tit">9大服务基站</p>
 					<p class="headline_titNext">技术大牛+硬核讲师为教学质量保驾护航，保障课程与企业需求实时接轨；10余年经验的教学老师更懂“教”与“学”！</p>
+					<div style="position: absolute; left:50%;top:50px; margin-left: -160px; opacity:0.3; width: 35px; height: 35px; background-color: #6232E5; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:80px; margin-left: 120px; opacity:0.3; width: 28px; height: 28px; background-color: #FFE290; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:36px; margin-left: -140px; opacity:0.3; width: 31px; height: 31px; background-color: #3258E5; "></div>
 				</div>
 				<div style="display: flex; position: relative;" class="lat">
 					<div id="echarts" ref="echarts"
@@ -350,6 +339,9 @@
 				<div id="headline">
 					<p class="headline_tit">辉达动态</p>
 					<p class="headline_titNext">顺应市场需求，不断改革、创新，构建前沿的课程体系，拓宽学员的知识深度与广度，为学员发展保驾护航</p>
+					<div style="position: absolute; left:50%;top:50px; margin-left: -130px; opacity:0.3; width: 35px; height: 35px; background-color: #6232E5; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:80px; margin-left: 88px; opacity:0.3; width: 28px; height: 28px; background-color: #FFE290; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:36px; margin-left: -110px; opacity:0.3; width: 31px; height: 31px; background-color: #3258E5; "></div>
 				</div>
 				<div class="dynamicBox lat">
 					<div class='dynamicBox_divA'>
@@ -392,6 +384,9 @@
 				<div id="headline">
 					<p class="headline_tit">校园环境</p>
 					<p class="headline_titNext">高配置学习环境让你安心学习</p>
+					<div style="position: absolute; left:50%;top:50px; margin-left: -130px; opacity:0.3; width: 35px; height: 35px; background-color: #6232E5; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:80px; margin-left: 88px; opacity:0.3; width: 28px; height: 28px; background-color: #FFE290; border-radius: 50%;"></div>
+					<div style="position: absolute; left:50%;top:36px; margin-left: -110px; opacity:0.3; width: 31px; height: 31px; background-color: #3258E5; "></div>
 				</div>
 				<div class="campusBoxImg lat">
 					<div class="campusImg" v-for="(item,index) in campusImgs.img">
@@ -913,11 +908,11 @@
 					bannerNext: [ //banner下收费标准
 						{
 							course: "学费价格",
-							icon: './image/send%20inquiry.svg'
+							icon: './image/send inquiry.svg'
 						},
 						{
 							course: "开班信息",
-							icon: './image/operation.svg'
+							icon: './image/confirm.svg'
 						},
 						{
 							course: "入学攻略",
@@ -925,7 +920,7 @@
 						},
 						{
 							course: "学员信息",
-							icon: './image/operation.svg'
+							icon: './image/image-text.svg'
 						},
 
 					],
@@ -934,23 +929,23 @@
 					courseItem: [ //导航课程
 						{
 							course: "Java大数据",
-							icon: './image/java-script.svg'
+							icon: './image/icon_java.svg'
 						},
 						{
 							course: "Web前端",
-							icon: './image/8_3前端开发.svg'
+							icon: './image/icon_web.svg'
 						},
 						{
 							course: "UI/UE设计",
-							icon: './image/8_3前端开发.svg'
+							icon: './image/icon_uiue.svg'
 						},
 						{
 							course: "软件测试",
-							icon: './image/8_3前端开发.svg'
+							icon: './image/icon_software test.svg'
 						},
 						{
 							course: "更多课程",
-							icon: './image/8_3前端开发.svg'
+							icon: './image/icon _more.svg'
 						}
 
 					],
@@ -1206,6 +1201,14 @@
 					outlineItem() {
 						axios.get("./js/course.json").then(data => {
 							this.outlineItems = data.data
+							this.outlineItems.forEach((item,index)=>{
+								if(index==0){
+									item.img=item.iconA
+								}else{
+									item.img=item.iconB
+								}
+								console.log(item,"12======")
+							})
 							this.outlinebodyTitleA = data.data[0].body.bodyTitle[0]
 							this.outlinebodyTitleB = data.data[0].body.bodyTitle[1]
 							this.outlinebodyTitleItem = data.data[0].body.bodyItem[0]
@@ -1260,17 +1263,31 @@
 					},
 					outlineTabboxDiv(item, index) {
 						$(".box").css({
-							"border": "none"
+							"border-bottom": "10px solid #fff"
+						}).find("span").css({
+							"color":"#B0BDD0"
 						})
 						$(".box").eq(index).css({
-							"border-bottom": "2px solid #8A8A8A",
+							"border-bottom": "10px solid #3258E5",
+						}).find("span").css({
+							"color":"#3258E5"
 						})
+						console.log(this.outlineItems)
+						console.log(item)
+						this.outlineItems.forEach((item,indexs)=>{
+							if(indexs==index){
+								item.img=item.iconA
+							}else{
+								item.img=item.iconB
+							}
+							
+						})
+						
 						console.log(item)
 						this.outlinebodyTitleA = item.body.bodyTitle[0]
 						this.outlinebodyTitleB = item.body.bodyTitle[1]
 						this.outlinebodyTitleItem = item.body.bodyItem[0]
 						this.outlinebodyTitleItemNext = item.body.bodyItem[1]
-						// console.log(this.outlineItems)
 						console.log(this.outlinebodyTitleA, this.outlinebodyTitleB)
 						let width = $(".outlinebodyTitle_item-box").eq(0).width()
 						this.styleWidth = width / this.outlinebodyTitleItem.length - 20
